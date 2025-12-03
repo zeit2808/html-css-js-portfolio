@@ -1,0 +1,29 @@
+/* ------------------ MEDIA QUERIES ------------------ */
+@media screen and (max-width: 1200px) {
+    #desktop-nav { display: none; }
+    #hamburger-nav { display: flex; }
+
+    section {
+        margin: 0 2rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #hamburger-nav .logo {
+        font-size: 1.3rem;
+    }
+
+    .menu-links {
+        width: 180px;
+        right: 1rem;
+    }
+}

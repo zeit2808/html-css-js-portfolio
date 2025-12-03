@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nam Ngo</div>
+        <div>
+            <ul class="nav-links">    
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div  class="logo">Nam Ngo</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience"  onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects"  onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
+                </ul>                    
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.png" alt="Ngo Nam profile picture"/>
+        </div>
+        <div class="section_text">
+            <p class = "section_text_p1">Hello, I'm</p>
+            <h1 class = "title">Ngo Chi Nam</h1>
+            <p class="section_text_p2">Backend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/SE190507_NgoChiNam.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/zeit2808'"/>
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ng%C3%B4-nam-4a134a393/'"/>
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="about-p">About Me</>
+    
+        <div class="about-container">
+            
+            <!-- Background -->
+            <div class="about-box">
+                <div class="box-title">
+                    <h3>Education</h3>
+                    <img src="./assets/education.png" alt="education-icon">
+                </div>
+                <ul class="about-list">
+                    <li>
+                        <img src="./assets/check.png" alt="check" class="check-icon">
+                        I started studying Software Engineering at FPT University in 2023.
+                    </li>
+                    <li>
+                        <img src="./assets/check.png" alt="check" class="check-icon">
+                        I focus on improving full-stack development and problem-solving skills.
+                    </li>
+                    <li>
+                        <img src="./assets/check.png" alt="check" class="check-icon">
+                        I enjoy building real-world applications and working on personal projects.
+                    </li>
+                </ul>
+
+            </div>
+    
+            <!-- Hobbies -->
+            <div class="about-box">
+                <div class="box-title">
+                    <h3>Hobbies</h3>
+                    <img src="./assets/hobbies.png" alt="hobbies-icon">
+                </div>
+                <ul class="about-list">
+                    <li>
+                        <img src="./assets/check.png" alt="check" class="check-icon">
+                        Listening to music.
+                    </li>
+                    <li>
+                        <img src="./assets/check.png" alt="check" class="check-icon">
+                        Playing video games.
+                    </li>
+                    <li>
+                        <img src="./assets/check.png" alt="check" class="check-icon">
+                        Practicing Muay Thai.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!-- Future Goals -->
+    <div class="future-box">
+        <div class="about-box">
+            <div class="box-title">
+                <h3>Future Goals</h3>
+                <img src="./assets/goals.jpg" alt="future-goals-icon">
+            </div>
+            <ul class="about-list">
+                <li>
+                    <img src="./assets/check.png" alt="check" class="check-icon">
+                    Improve backend development skills, especially in Java and .NET.
+                </li>
+                <li>
+                    <img src="./assets/check.png" alt="check" class="check-icon">
+                    Learn database optimization and scalable system design.
+                </li>
+                <li>
+                    <img src="./assets/check.png" alt="check" class="check-icon">
+                    Work on real-world projects and contribute to open-source.
+                </li>
+            </ul>
+    </div>
+    </div>
+    
+    </section>
+    
+    
+    <section id="experience">
+        <p class="section_text_p1">Explore My Skills</p>
+        <div class="ex-icon">
+            <h1>Experience</h1>
+            <img src="./assets/experience.png" alt="ex_icon">
+        </div>
+        <div class="experience-container">
+    
+            <!-- BACKEND -->
+            <div class="exp-box">
+                <h2 class="exp-title">Backend Development</h2>
+    
+                <div class="exp-list">
+                    <div class="exp-item">
+                        <img src="./assets/check.png" class="icon-sm" alt="check">
+                        <h3>Java(Basic)</h3>
+                    </div>
+                    <div class="exp-item">
+                        <img src="./assets/check.png" class="icon-sm" alt="check">
+                        <h3>C#(Basic)</h3>
+                    </div>
+                    <div class="exp-item">
+                        <img src="./assets/check.png" class="icon-sm" alt="check">
+                        <h3>C++(Basic)</h3>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- FRONTEND -->
+            <div class="exp-box">
+                <h2 class="exp-title">Frontend Development</h2>
+    
+                <div class="exp-list">
+                    <div class="exp-item">
+                        <img src="./assets/check.png" class="icon-sm" alt="check">
+                        <h3>HTML(Basic)</h3>
+                    </div>
+                    <div class="exp-item">
+                        <img src="./assets/check.png" class="icon-sm" alt="check">
+                        <h3>CSS(Basic)</h3>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+
+                </div>
+                <h2 class="experience-sub-title project-title">My Project</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/caoduy13/OEM-EV-Warranty-Management-System'">GitHub</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Toch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" 
+                alt="Email Icon"
+                class = "icon contact-icon"/>
+                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=zeit2808@gmail.com">zeit2808@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" 
+                alt="linkedin Icon"
+                class = "icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/ng%C3%B4-nam-4a134a393/">LinkedIn</a></p>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Nam Ngo. All Rights Reserved .</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
